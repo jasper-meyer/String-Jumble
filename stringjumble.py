@@ -25,3 +25,15 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
+text=input("Please enter a string of text (the bigger the better): ")
+print ('You entered "{0}". Now jumble it: '.format(text))
+st=list(text)
+st.reverse()
+rd = (''.join(map(str, st)))
+print (rd)
+nd=text.split()
+rd=nd
+nd.reverse()
+print (' '.join(map(str, nd)))
+rd=' '.join([word[::-1]for word in text.split()])
+print (rd)
